@@ -1,6 +1,5 @@
 <?php
 session_start();
-require_once('view/conteudo.php');
 require_once('./controller/simplex.php');
 
 class resultado
@@ -183,7 +182,7 @@ class resultado
 			$_SESSION['tabelafinal'] = $tabela;
 			if ($passoapasso=='S')
 			{
-				$conteudo.=$simplex->MostraTabela('12',$qtdecolunas,$qtdelinhas);
+				$conteudo.=$simplex->MostraTabelaPivo('12',$qtdecolunas,$qtdelinhas,$LinhaDoMenor,$ColunaDoMenor);
 			}
 		
 			if ($pivo==0)

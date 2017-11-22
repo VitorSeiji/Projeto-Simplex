@@ -1,9 +1,6 @@
 <?php
 require_once('simplex.php');
-//require_once('view/conteudo.php');
-//$tela = new conteudo;
-//$tela->SetTitle('Sistema Simplex');
-//$tela->SetProjectName('Sistema Simplex');
+
 
 class analisesensibilidade
 {
@@ -164,7 +161,7 @@ class analisesensibilidade
 			  //escreve o resultado do calculo arredondado
 		
 			  $conteudo.='<strong>Minimo :'.$lmin[$aux].'</strong><br>';
-			  $conteudo.='<strong>Máximo :dando com 2 casas após a virgula';
+			  $conteudo.='<strong>Máximo :';
 			  //este calculo é apenas vizualização, o valor foi armazenado no array $deltas na linha 124
 			  $conteudo.=($b*-1).' /  '.$f.' + '.$vlrb.' = '.  (round(((($b*-1)/$f)),2)+$vlrb).'<br>';
 			}

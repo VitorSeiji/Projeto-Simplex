@@ -16,7 +16,7 @@ function mostraConteudo($conteudo){
 	$mpdf->allow_charset_conversion=true;// permite a conversao (opcional)
 	$mpdf->charset_in='UTF-8'; // converte todo o PDF para utf-8	
 	$mpdf->SetDisplayMode('fullpage');// modo de visualização
-	$conteudo.='<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"><style>.padding5{padding: 10px;}</style>'.$conteudo;
+	$conteudo.='<html><head><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"><style>.padding5{padding: 10px;}</style></head><body style="font-size:10pt;"> '.$conteudo.'</body>';
 	$mpdf->WriteHTML($conteudo,0);
 	// escreve definitivamente o conteudo no PDF
 	$mpdf->Output();

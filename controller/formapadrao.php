@@ -8,9 +8,6 @@ class formapadrao
 	public function __construct() {
 					
 			
-			$tela = new conteudo();
-			$tela->SetTitle('Sistema Simplex');
-			$tela->SetProjectName('Sistema Simplex');
 			
 			$conteudo='<h1 style="text-align:center;">Forma Padrão</h1>';
 			$conteudo.='<h5 style="text-align:center;">Nesta etapa a fórmula é modificada  para a forma padrão e inclui-se as variáveis de folga.</h5><br><br>';
