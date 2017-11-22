@@ -18,7 +18,6 @@ O Simplex permite que se encontre valores ideais em situações em que diversos 
 - JQuery
 - PHP
 - Bootstrap
-- Materialize
 - GitHub para hospedagem e versionamento
 
 ## Nota de realease a ser publicado
