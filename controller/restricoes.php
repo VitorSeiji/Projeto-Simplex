@@ -62,7 +62,7 @@ class restricoes
 					$conteudo.='
 						<select id="relacao" name="relacao'.$l.'">
 							<option value= "<="> <=	</option>
-							<option value= ">="> >=	</option>
+							<!--<option value= ">="> >=	</option>-->
 						</select>
 						<input type="number" step"1" name="resultado'.$l.'" size="3" maxlength="4">
 					';
